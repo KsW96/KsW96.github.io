@@ -1,31 +1,18 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Noah Template</title>
+	<title>김성우 포트폴리오</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -47,67 +34,76 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		.left-nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background: #333;
+			/* 배경색 지정 */
+			z-index: 9999;
+			overflow-y: auto;
+			/* 네비게이션 바 내용이 넘칠 경우 스크롤 생성 */
+			transition: all 0.3s ease;
+		}
 
-	</head>
-	<body>
+		/* 네비게이션 바 버튼 스타일 */
+		.left-nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
 
-	<nav id="colorlib-main-nav" role="navigation">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-		<div class="js-fullheight colorlib-table">
-			<div class="colorlib-table-cell js-fullheight">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
-							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="work.html">Work</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="head-title">Works</h2>
-						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
-							<span><i class="icon-search3"></i></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-	
+		.left-nav ul li {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+		}
+
+		.left-nav ul li a {
+			display: block;
+			padding: 20px 30px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+
+		/* 스크롤 시 네비게이션 바 버튼 위치 조정 */
+		.left-nav.scrolled ul li a {
+			padding: 20px 30px;
+		}
+	</style>
+
+</head>
+
+<body>
 	<div id="colorlib-page">
 		<header>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html"><span>No</span><span>ah</span></a>
+							<a class="colorlib-logo" href="index.html"><span>KsW96</span><span>Home</span></a>
 						</div>
-						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+
 					</div>
 				</div>
 			</div>
+			<nav class="fixed-top left-nav">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="#colorlib-page">Home</a></li>
+							<li><a href="#colorlib-services">Skills</a></li>
+							<li><a href="#colorlib-work">Work</a></li>
+							<li><a href="#colorlib-blog">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<div id="colorlib-about">
 			<div class="container">
@@ -118,10 +114,12 @@
 					<div class="col-md-5 animate-box">
 						<div class="owl-carousel3">
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about.jpg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="images/ksw1.jpg"
+									alt="html5 bootstrap template by colorlib.com">
 							</div>
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about-2.jpg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="images/ksw2.jpg"
+									alt="html5 bootstrap template by colorlib.com">
 							</div>
 						</div>
 					</div>
@@ -129,34 +127,42 @@
 						<div class="about-desc">
 							<div class="owl-carousel3">
 								<div class="item">
-									<h2><span>Noah</span><span>Henderson</span></h2>
+									<h2><span>개발자</span><span>김성우</span></h2>
 								</div>
 								<div class="item">
-									<h2><span>I'm</span><span>A Designer</span></h2>
+									<h2><span>소통하는</span><span>개발자</span></h2>
+								</div>
+								<div class="item">
+									<h2><span>학습하는</span><span>개발자</span></h2>
 								</div>
 							</div>
 							<div class="desc">
 								<div class="rotate">
-									<h2 class="heading">About</h2>
+									<h2 class="heading">About Me</h2>
 								</div>
-								<p>A small river named Duden <a href="#">flows by their place</a> and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+
+								<span class="typed"
+									data-typed-items="Web Developer, Backend Developer, Learning Developer, Communicating Developer"></span>
+								<p></p>
+								<p> 안녕하세요 :) </p>
+								<p>웹과 백엔드 개발에 관심 많은 소통하는 개발자 <strong>김성우</strong>입니다. <a href="#"></a> </p>
+								<p>코드 작성만을 통해 만들어지는 흥미로운 프로그래밍의 세계에서
+								다양한 작품들을 만들어가는 개발자가 되고 싶습니다.</p>
 								<p class="colorlib-social-icons">
-									<a href="#"><i class="icon-facebook4"></i></a>
-									<a href="#"><i class="icon-twitter3"></i></a>
-									<a href="#"><i class="icon-googleplus"></i></a>
-									<a href="#"><i class="icon-dribbble2"></i></a>
+									<a href="https://github.com/KsW96"><i class="icon-github"></i></a>
 								</p>
-								<p><a href="#" class="btn btn-primary btn-outline">Contact Me!</a></p>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div id="colorlib-services">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Services</h2>
+					<h2 class="bold">Information</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
@@ -164,59 +170,108 @@
 							<div class="one-third">
 								<div class="row">
 									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-										<span>My Services</span>
-										<h2>Here Are Some of My Skills</h2>
+										<span>Information</span>
+										<h2>Information</h2>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
 										<div class="rotate">
-											<h2 class="heading">Services</h2>
+											<h2 class="heading">Information</h2>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>1 - Graphic Design</h3>
-											<ul>
-												<li>UI Design</li>
-												<li>Website &amp; Digital Design</li>
-												<li>Brading &amp; Visual Identity</li>
-												<li>Print Design</li>
-											</ul>
+											<h3> 이름 : 김성우</h3>
+											<h3>생년월일 : 1996년생 (만 27세)</h3>
+											<h3>주소 : 부산 거주 (회사 근처 이동가능)</h3>
+											<h3>연락처 : 010 - 2934 -7551</h3>
+											<h3>이메일 : ghkfzha1@gmail.com</h3>
+											<h3>학력 : 동서대학교 학사</h3>
 										</div>
+									</div>
+								</div>
+							</div>
+							<div class="one-forth services-img" style="background-image: url(images/skills.png);">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Skills</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="services-flex">
+							<div class="one-third">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+										<span>My Skills</span>
+										<h2>My Skills</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="rotate">
+											<h2 class="heading">Skills</h2>
+										</div>
+									</div>
+									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>3 - Front End Development</h3>
+											<h3>Frontend</h3>
 											<ul>
 												<li>HTML / CSS</li>
-												<li>JS &amp; Jquery Startup</li>
-												<li>WordPress</li>
-												<li>Jomla</li>
+												<li>JSP</li>
+												<li>JavaScript</li>
+												<li>Bootstrap</li>
+											</ul>
+										</div>
+										<div class="services animate-box">
+											<h3>IDE</h3>
+											<ul>
+												<li>Eclipse</li>
+												<li>VSCode</li>
+
+											</ul>
+										</div>
+										<div class="services animate-box">
+											<h3>VersionControler</h3>
+											<ul>
+												<li>Github</li>
 											</ul>
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3>2 - Illustration</h3>
+											<h3>Language</h3>
 											<ul>
-												<li>Editorial</li>
-												<li>Narrative</li>
-												<li>Motion Graphics</li>
-												<li>Animation</li>
-												<li>Visual Effects</li>
+												<li>Java</li>
 											</ul>
 										</div>
 										<div class="services animate-box">
-											<h3>4 - Web Marketing</h3>
+											<h3>Backend</h3>
 											<ul>
-												<li>Sales Marketing</li>
-												<li>Invoice</li>
-												<li>eCommerce</li>
+												<li>Servlet</li>
+												<li>Spring Framework</li>
+												<li>Spring Boot</li>
+												<li>Junit4</li>
+												<li>Maven</li>
+												<li>MySQL</li>
+												<li>JDBC</li>
+												<li>MyBatis</li>
+												<li>JPA</li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/services-img-1.jpg);">
+							<div class="one-forth services-img" style="background-image: url(images/skills.png);">
 							</div>
 						</div>
 					</div>
@@ -227,7 +282,7 @@
 		<div id="colorlib-work">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Works</h2>
+					<h2 class="bold">Projects</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
@@ -245,16 +300,25 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-1.jpg);">
+							<a href="https://github.com/KsW96/DungsMall" class="work-img"
+								style="background-image: url(images/shopmall.png);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Pursuing Best</h2>
+										<h2>Dungs Mall</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>[기획]</p>
+									<p>CRUD 기반 쇼핑몰</p>
+									<p>[학습 목표]</p>
+									<ul>
+										<li>웹 서버 시스템에 대한 학습</li>
+										<li>JSP/JS/CSS 연습</li>
+										<li>MVC 패턴 연습</li>
+										<li>DB 알고리즘 구성에 대한 연습</li>
+									</ul>
 									<p class="read"><a href="#">View details</a></p>
 								</div>
 							</div>
@@ -262,16 +326,26 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-2.jpg);">
+							<a href="https://github.com/KsW96/FoodChatBot_Repo" class="work-img"
+								style="background-image: url(images/chatbot.png);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Coordinates</h2>
+										<h2>Chatbot</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>[기획]</p>
+									<p>학습형 AIChatBot 구현을 통해 사용자가 보다 편리하고 높은 신뢰도를 가질 수 있는 음식 추천 프로그램</p>
+									<p>[학습 목표]</p>
+									<ul>
+										<li>AI에 대한 학습과 이해</li>
+										<li>DB 알고리즘 구성에 대한 연습</li>
+										<li>웹 서버 시스템에 대한 학습</li>
+										<li>HTML/CSS JS JSP 연습</li>
+										<li>API 활용 연습</li>
+									</ul>
 									<p class="read"><a href="#">View Details</a></p>
 								</div>
 							</div>
@@ -279,16 +353,27 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-3.jpg);">
+							<a href="https://github.com/KsW96/Pizza_Kiosk_Repo" class="work-img"
+								style="background-image: url(images/kiosk&Pos.png);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Cristall</h2>
+										<h2>Kiosk & Pos</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>[기획]</p>
+									<p>실생활에서 쉽게 접근할 수 있으며, 자주 사용하게 되는 Kiosk 와 관리자의 입장에서 사용하게 될 Pos를 실제 매장에서 사용하는 것처럼
+										실시간으로 연동되는 상태로 구현해보고자 하였음.</p>
+									<p>[학습 목표]</p>
+									<ul>
+										<li>DB활용 연습</li>
+										<li>객체지향 프로그래밍에 대한 이해</li>
+										<li>개발 능력 향상</li>
+										<li>GUI 구성 및 이해</li>
+										<li>팀 프로젝트 경험</li>
+									</ul>
 									<p class="read"><a href="#">View details</a></p>
 								</div>
 							</div>
@@ -296,16 +381,49 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-4.jpg);">
+							<a href="https://github.com/KsW96/Lotto_repo" class="work-img"
+								style="background-image: url(images/Lotto.png);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Black</h2>
+										<h2>Lotto</h2>
 									</div>
 								</div>
 							</a>
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>[기획]</p>
+									<p>기존에 존재하는 Lotto 추첨 프로그램들과 같은 기능의 구성을 갖춘 프로그램 작성</p>
+									<p>[학습 목표]</p>
+									<ul>
+										<li>GUI 구성 및 이해</li>
+										<li>객체지향 프로그래밍에 대한 이해</li>
+										<li>개발 능력 향상</li>
+										<li>팀 프로젝트 경험</li>
+									</ul>
+									<p class="read"><a href="#">View details</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="https://github.com/KsW96/HotelManagementSystem" class="work-img"
+								style="background-image: url(images/hotel.jpg);">
+								<div class="display-t">
+									<div class="work-name">
+										<h2>Hotel Management</h2>
+									</div>
+								</div>
+							</a>
+							<div class="col-md-4 col-md-offset-4">
+								<div class="desc">
+									<p>[기획]</p>
+									<p>Hotel Front Desk에서 원활한 객실 관리를 위한 프로그램</p>
+									<p>[학습 목표]</p>
+									<ul>
+										<li>객체지향 프로그래밍에 대한 이해</li>
+										<li>팀 프로젝트 경험</li>
+									</ul>
 									<p class="read"><a href="#">View details</a></p>
 								</div>
 							</div>
@@ -323,13 +441,13 @@
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Blog</span>
-						<h2>Read Our Case</h2>
+						<h2>My Blog</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Our Blog</h2>
+							<h2 class="heading">Blog</h2>
 						</div>
 					</div>
 				</div>
@@ -339,16 +457,15 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-1.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="images/git.png"
+											alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
 											<span class="read">Read more</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<h2><a href="https://github.com/KsW96">Github</a></h2>
 									</div>
 								</div>
 							</div>
@@ -357,16 +474,18 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-2.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="images/notion1.png"
+											alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
 											<span class="read">Read more</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<h2><a
+												href="https://mercurial-waterlily-2ba.notion.site/JAVA-NCS-4f2e3ef21c1e47979174db443ae6c98b?pvs=4">Notion
+												Diary</a></h2>
+										<p>학습하는 시기에 작성하고 기록해두는 공간이에요!</p>
 									</div>
 								</div>
 							</div>
@@ -375,16 +494,18 @@
 							<div class="col-md-12">
 								<div class="article">
 									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-3.jpg" alt="html5 bootstrap by colorlib.com">
+										<img class="img-responsive" src="images/notion2.png"
+											alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
 											<span class="read">Read more</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<h2><a
+												href="bhttps://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4">Notion
+												Note</a></h2>
+										<p>일상에서 학습한 내용을 정리 하고 열람하기 위해 사용하는 공간이에요!</p>
 									</div>
 								</div>
 							</div>
@@ -393,62 +514,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div id="colorlib-testimony">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Testimonies</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Testimonies</span>
-						<h2>Clients Says</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="rotate">
-							<h2 class="heading">Says</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="owl-carousel">
-						<div class="item">
-							<div class="col-md-12 text-center">
-								<div class="testimony">
-									<blockquote>
-										<p>"A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-										<span>" &mdash; George Brooks</span>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12 text-center">
-								<div class="testimony">
-									<blockquote>
-										<p>"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-										<span>" &mdash; Daniel Foster</span>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12 text-center">
-								<div class="testimony">
-									<blockquote>
-										<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-										<span>" &mdash; Liam Jenkins</span>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<footer>
 			<div id="footer">
 				<div class="container">
@@ -457,65 +522,34 @@
 							<div class="row">
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
-									<p>A small river named Duden flows by their place and supplies.</p>
-									<p><a href="#">noah@info.com</a></p>
+									<p>프로젝트에 대한 설명 혹은 직장과 관련 문의는 아래 정보를 통해 알려주세요!</p>
+									<p><a href="#">ghkfzha1@gmail.com</a></p>
+									<p><a href="#">010-2934-7551</a></p>
 									<p class="colorlib-social-icons">
-										<a href="#"><i class="icon-facebook4"></i></a>
-										<a href="#"><i class="icon-twitter3"></i></a>
-										<a href="#"><i class="icon-googleplus"></i></a>
-										<a href="#"><i class="icon-dribbble2"></i></a>
+										<a href="#"><i class="icon-github"></i></a>
 									</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Latest Blog</h2>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
-								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Art Gallery in Japan</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
-								<div class="desc">
-									<span>February 9, 2018</span>
-									<h3><a href="#">A Japanese Constellation</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
-								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Road Trip</a></h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Newsletter</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
-							<div class="subscribe text-center">
-								<div class="form-group">
-									<input type="text" class="form-control text-center" placeholder="Enter Email address">
-									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-								</div>
-							</div>
-						</div>
+
 					</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
-								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								&copy;
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+								template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a
+									href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-	
+
 	</div>
 
 	<!-- jQuery -->
@@ -531,10 +565,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+		const typed = new Typed(".typed", {
+			strings: [
+				"Web Developer",
+				"Backend Developer",
+				"Learning Developer",
+				"Communicating Developer",
+			],
+			loop: true,
+			typeSpeed: 100,
+			backSpeed: 50,
+			backDelay: 2000,
+		});
+	</script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
+</body>
 
+</html>
