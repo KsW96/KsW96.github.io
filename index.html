@@ -90,7 +90,8 @@
 @media screen and (max-width: 768px) {
 	/* 휴대폰 화면에 적용될 스타일 */
 	.left-nav {
-		display: none; /* 기본적으로 숨김 */
+		display: none;
+		/* 기본적으로 숨김 */
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -657,6 +658,14 @@
 			typeSpeed : 100,
 			backSpeed : 50,
 			backDelay : 2000,
+		});
+	</script>
+	<script>
+		const toggleButton = document.querySelector('.toggle-button');
+		const leftNav = document.querySelector('.left-nav');
+
+		toggleButton.addEventListener('click', function() {
+			leftNav.classList.toggle('active');
 		});
 	</script>
 
