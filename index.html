@@ -2,80 +2,116 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>김성우 포트폴리오</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>김성우 포트폴리오</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+	rel="stylesheet">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<style>
-		.left-nav {
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 100%;
-			background: #333;
-			/* 배경색 지정 */
-			z-index: 9999;
-			overflow-y: auto;
-			/* 네비게이션 바 내용이 넘칠 경우 스크롤 생성 */
-			transition: all 0.3s ease;
-		}
+<style>
+.left-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #333;
+	/* 배경색 지정 */
+	z-index: 9999;
+	overflow-y: auto;
+	/* 네비게이션 바 내용이 넘칠 경우 스크롤 생성 */
+	transition: all 0.3s ease;
+}
 
-		/* 네비게이션 바 버튼 스타일 */
-		.left-nav ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
+/* 네비게이션 바 버튼 스타일 */
+.left-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 
-		.left-nav ul li {
-			margin: 0;
-			padding: 0;
-			text-align: right;
-		}
+.left-nav ul li {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
 
-		.left-nav ul li a {
-			display: block;
-			padding: 20px 30px;
-			text-decoration: none;
-			color: #fff;
-			font-size: 18px;
-			font-weight: bold;
-			transition: 0.3s;
-		}
+.left-nav ul li a {
+	display: block;
+	padding: 20px 30px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	transition: 0.3s;
+}
 
-		/* 스크롤 시 네비게이션 바 버튼 위치 조정 */
-		.left-nav.scrolled ul li a {
-			padding: 20px 30px;
-		}
-	</style>
+/* 스크롤 시 네비게이션 바 버튼 위치 조정 */
+.left-nav.scrolled ul li a {
+	padding: 20px 30px;
+}
+
+@media screen and (max-width: 768px) {
+	/* 휴대폰 화면에 적용될 스타일 */
+	.left-nav {
+		/* 네비게이션 바 스타일 수정 */
+		
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* 휴대폰 화면에 적용될 스타일 */
+	.left-nav {
+		display: none; /* 기본적으로 숨김 */
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background: #333;
+		z-index: 9999;
+		overflow-y: auto;
+		transition: all 0.3s ease;
+	}
+
+	/* 토글 버튼 스타일 */
+	.toggle-button {
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 10000;
+		cursor: pointer;
+	}
+}
+</style>
 
 </head>
 
@@ -104,6 +140,11 @@
 					</div>
 				</div>
 			</nav>
+			<div class="toggle-button">
+				<span>&#9776;</span>
+				<!-- 햄버거 아이콘 -->
+			</div>
+
 		</header>
 		<div id="colorlib-about">
 			<div class="container">
@@ -127,13 +168,19 @@
 						<div class="about-desc">
 							<div class="owl-carousel3">
 								<div class="item">
-									<h2><span>개발자</span><span>김성우</span></h2>
+									<h2>
+										<span>개발자</span><span>김성우</span>
+									</h2>
 								</div>
 								<div class="item">
-									<h2><span>소통하는</span><span>개발자</span></h2>
+									<h2>
+										<span>소통하는</span><span>개발자</span>
+									</h2>
 								</div>
 								<div class="item">
-									<h2><span>학습하는</span><span>개발자</span></h2>
+									<h2>
+										<span>학습하는</span><span>개발자</span>
+									</h2>
 								</div>
 							</div>
 							<div class="desc">
@@ -144,14 +191,16 @@
 								<span class="typed"
 									data-typed-items="Web Developer, Backend Developer, Learning Developer, Communicating Developer"></span>
 								<p></p>
-								<p> 안녕하세요 :) </p>
-								<p>웹과 백엔드 개발에 관심 많은 소통하는 개발자 <strong>김성우</strong>입니다. <a href="#"></a> </p>
-								<p>코드 작성만을 통해 만들어지는 흥미로운 프로그래밍의 세계에서
-								다양한 작품들을 만들어가는 개발자가 되고 싶습니다.</p>
+								<p>안녕하세요 :)</p>
+								<p>
+									웹과 백엔드 개발에 관심 많은 소통하는 개발자 <strong>김성우</strong>입니다. <a href="#"></a>
+								</p>
+								<p>코드 작성만을 통해 만들어지는 흥미로운 프로그래밍의 세계에서 다양한 작품들을 만들어가는 개발자가 되고
+									싶습니다.</p>
 								<p class="colorlib-social-icons">
 									<a href="https://github.com/KsW96"><i class="icon-github"></i></a>
 								</p>
-								
+
 							</div>
 						</div>
 					</div>
@@ -169,7 +218,8 @@
 						<div class="services-flex">
 							<div class="one-third">
 								<div class="row">
-									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+									<div
+										class="col-md-12 col-md-offset-0 animate-box intro-heading">
 										<span>Information</span>
 										<h2>Information</h2>
 									</div>
@@ -182,7 +232,7 @@
 									</div>
 									<div class="col-md-6">
 										<div class="services animate-box">
-											<h3> 이름 : 김성우</h3>
+											<h3>이름 : 김성우</h3>
 											<h3>생년월일 : 1996년생 (만 27세)</h3>
 											<h3>주소 : 부산 거주 (회사 근처 이동가능)</h3>
 											<h3>연락처 : 010 - 2934 -7551</h3>
@@ -192,8 +242,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/skills.png);">
-							</div>
+							<div class="one-forth services-img"
+								style="background-image: url(images/skills.png);"></div>
 						</div>
 					</div>
 				</div>
@@ -211,7 +261,8 @@
 						<div class="services-flex">
 							<div class="one-third">
 								<div class="row">
-									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+									<div
+										class="col-md-12 col-md-offset-0 animate-box intro-heading">
 										<span>My Skills</span>
 										<h2>My Skills</h2>
 									</div>
@@ -271,8 +322,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/skills.png);">
-							</div>
+							<div class="one-forth services-img"
+								style="background-image: url(images/skills.png);"></div>
 						</div>
 					</div>
 				</div>
@@ -285,7 +336,8 @@
 					<h2 class="bold">Projects</h2>
 				</div>
 				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+					<div
+						class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
 						<h2>Done Projects</h2>
 					</div>
@@ -319,14 +371,17 @@
 										<li>MVC 패턴 연습</li>
 										<li>DB 알고리즘 구성에 대한 연습</li>
 									</ul>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read">
+										<a href="#">View details</a>
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="https://github.com/KsW96/FoodChatBot_Repo" class="work-img"
+							<a href="https://github.com/KsW96/FoodChatBot_Repo"
+								class="work-img"
 								style="background-image: url(images/chatbot.png);">
 								<div class="display-t">
 									<div class="work-name">
@@ -337,7 +392,8 @@
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
 									<p>[기획]</p>
-									<p>학습형 AIChatBot 구현을 통해 사용자가 보다 편리하고 높은 신뢰도를 가질 수 있는 음식 추천 프로그램</p>
+									<p>학습형 AIChatBot 구현을 통해 사용자가 보다 편리하고 높은 신뢰도를 가질 수 있는 음식 추천
+										프로그램</p>
 									<p>[학습 목표]</p>
 									<ul>
 										<li>AI에 대한 학습과 이해</li>
@@ -346,14 +402,17 @@
 										<li>HTML/CSS JS JSP 연습</li>
 										<li>API 활용 연습</li>
 									</ul>
-									<p class="read"><a href="#">View Details</a></p>
+									<p class="read">
+										<a href="#">View Details</a>
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="https://github.com/KsW96/Pizza_Kiosk_Repo" class="work-img"
+							<a href="https://github.com/KsW96/Pizza_Kiosk_Repo"
+								class="work-img"
 								style="background-image: url(images/kiosk&Pos.png);">
 								<div class="display-t">
 									<div class="work-name">
@@ -364,8 +423,8 @@
 							<div class="col-md-4 col-md-offset-4">
 								<div class="desc">
 									<p>[기획]</p>
-									<p>실생활에서 쉽게 접근할 수 있으며, 자주 사용하게 되는 Kiosk 와 관리자의 입장에서 사용하게 될 Pos를 실제 매장에서 사용하는 것처럼
-										실시간으로 연동되는 상태로 구현해보고자 하였음.</p>
+									<p>실생활에서 쉽게 접근할 수 있으며, 자주 사용하게 되는 Kiosk 와 관리자의 입장에서 사용하게 될
+										Pos를 실제 매장에서 사용하는 것처럼 실시간으로 연동되는 상태로 구현해보고자 하였음.</p>
 									<p>[학습 목표]</p>
 									<ul>
 										<li>DB활용 연습</li>
@@ -374,7 +433,9 @@
 										<li>GUI 구성 및 이해</li>
 										<li>팀 프로젝트 경험</li>
 									</ul>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read">
+										<a href="#">View details</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -400,14 +461,17 @@
 										<li>개발 능력 향상</li>
 										<li>팀 프로젝트 경험</li>
 									</ul>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read">
+										<a href="#">View details</a>
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="https://github.com/KsW96/HotelManagementSystem" class="work-img"
+							<a href="https://github.com/KsW96/HotelManagementSystem"
+								class="work-img"
 								style="background-image: url(images/hotel.jpg);">
 								<div class="display-t">
 									<div class="work-name">
@@ -424,7 +488,9 @@
 										<li>객체지향 프로그래밍에 대한 이해</li>
 										<li>팀 프로젝트 경험</li>
 									</ul>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read">
+										<a href="#">View details</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -439,7 +505,8 @@
 					<h2 class="bold">Blog</h2>
 				</div>
 				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+					<div
+						class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Blog</span>
 						<h2>My Blog</h2>
 					</div>
@@ -456,16 +523,19 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/git.png"
-											alt="html5 bootstrap by colorlib.com">
+									<a href="blog.html" class="blog-img"> <img
+										class="img-responsive" src="images/git.png"
+										alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Read more
+												</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<h2><a href="https://github.com/KsW96">Github</a></h2>
+										<h2>
+											<a href="https://github.com/KsW96">Github</a>
+										</h2>
 									</div>
 								</div>
 							</div>
@@ -473,18 +543,21 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/notion1.png"
-											alt="html5 bootstrap by colorlib.com">
+									<a href="blog.html" class="blog-img"> <img
+										class="img-responsive" src="images/notion1.png"
+										alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Read more
+												</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<h2><a
+										<h2>
+											<a
 												href="https://mercurial-waterlily-2ba.notion.site/JAVA-NCS-4f2e3ef21c1e47979174db443ae6c98b?pvs=4">Notion
-												Diary</a></h2>
+												Diary</a>
+										</h2>
 										<p>학습하는 시기에 작성하고 기록해두는 공간이에요!</p>
 									</div>
 								</div>
@@ -493,18 +566,21 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/notion2.png"
-											alt="html5 bootstrap by colorlib.com">
+									<a href="blog.html" class="blog-img"> <img
+										class="img-responsive" src="images/notion2.png"
+										alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
-											<span class="read">Read more</h2>
+											<span class="read">Read more
+												</h2>
 										</div>
 									</a>
 									<div class="desc">
-										<h2><a
+										<h2>
+											<a
 												href="bhttps://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4">Notion
-												Note</a></h2>
+												Note</a>
+										</h2>
 										<p>일상에서 학습한 내용을 정리 하고 열람하기 위해 사용하는 공간이에요!</p>
 									</div>
 								</div>
@@ -523,8 +599,12 @@
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
 									<p>프로젝트에 대한 설명 혹은 직장과 관련 문의는 아래 정보를 통해 알려주세요!</p>
-									<p><a href="#">ghkfzha1@gmail.com</a></p>
-									<p><a href="#">010-2934-7551</a></p>
+									<p>
+										<a href="#">ghkfzha1@gmail.com</a>
+									</p>
+									<p>
+										<a href="#">010-2934-7551</a>
+									</p>
 									<p class="colorlib-social-icons">
 										<a href="#"><i class="icon-github"></i></a>
 									</p>
@@ -539,8 +619,11 @@
 								&copy;
 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 								Copyright &copy;
-								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-								template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a
+								<script>
+									document.write(new Date().getFullYear());
+								</script>
+								All rights reserved | This template is made with <i
+									class="icon-heart4" aria-hidden="true"></i> by <a
 									href="https://colorlib.com" target="_blank">Colorlib</a>
 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</p>
@@ -568,16 +651,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script>
 		const typed = new Typed(".typed", {
-			strings: [
-				"Web Developer",
-				"Backend Developer",
-				"Learning Developer",
-				"Communicating Developer",
-			],
-			loop: true,
-			typeSpeed: 100,
-			backSpeed: 50,
-			backDelay: 2000,
+			strings : [ "Web Developer", "Backend Developer",
+					"Learning Developer", "Communicating Developer", ],
+			loop : true,
+			typeSpeed : 100,
+			backSpeed : 50,
+			backDelay : 2000,
 		});
 	</script>
 
