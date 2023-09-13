@@ -112,6 +112,30 @@
 		cursor: pointer;
 	}
 }
+
+
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
+  color: #fff;
+}
 </style>
 
 </head>
@@ -135,7 +159,7 @@
 						<ul>
 							<li class="active"><a href="#colorlib-page">Home</a></li>
 							<li><a href="#colorlib-services">Skills</a></li>
-							<li><a href="#colorlib-work">Work</a></li>
+							<li><a href="#colorlib-work">Projects</a></li>
 							<li><a href="#colorlib-blog">Blog</a></li>
 						</ul>
 					</div>
@@ -341,6 +365,7 @@
 						class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
 						<h2>Done Projects</h2>
+						<h3>Clicking on the screen takes you to a git link.</h3>
 					</div>
 				</div>
 				<div class="row">
@@ -544,30 +569,7 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="https://mercurial-waterlily-2ba.notion.site/JAVA-NCS-4f2e3ef21c1e47979174db443ae6c98b?pvs=4" class="blog-img"> <img
-										class="img-responsive" src="images/notion1.png"
-										alt="html5 bootstrap by colorlib.com">
-										<div class="overlay"></div>
-										<div class="link">
-											<span class="read">Read more
-												</h2>
-										</div>
-									</a>
-									<div class="desc">
-										<h2>
-											<a
-												href="https://mercurial-waterlily-2ba.notion.site/JAVA-NCS-4f2e3ef21c1e47979174db443ae6c98b?pvs=4">Notion
-												Diary</a>
-										</h2>
-										<p>학습하는 시기에 작성하고 기록해두는 공간이에요!</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="bhttps://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4" class="blog-img"> <img
+									<a href="https://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4" class="blog-img"> <img
 										class="img-responsive" src="images/notion2.png"
 										alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
@@ -579,13 +581,15 @@
 									<div class="desc">
 										<h2>
 											<a
-												href="bhttps://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4">Notion
-												Note</a>
+												href="https://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4">Notion
+												Diary</a>
 										</h2>
-										<p>일상에서 학습한 내용을 정리 하고 열람하기 위해 사용하는 공간이에요!</p>
+										<p>학습한 내용을 정리하고 기록해두는 공간이에요!</p>
 									</div>
 								</div>
 							</div>
+						</div>
+						
 						</div>
 					</div>
 				</div>
@@ -672,6 +676,34 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
+<div id="scroll-button" class="scroll-to-top" onclick="scrollToTop()">
+  <i class="icon-arrow-up"></i>
+</div>
+	<script>
+		// 스크롤 버튼을 누르면 페이지의 최상단으로 스크롤하는 함수
+		function scrollToTop() {
+		  window.scrollTo({
+			top: 0,
+			behavior: 'smooth' // 부드러운 스크롤 효과를 위해 'smooth' 옵션 사용
+		  });
+		}
+	  
+		// 스크롤 위치가 일정 이상일 때 스크롤 버튼을 표시/숨김하는 함수
+		function toggleScrollButton() {
+		  const scrollButton = document.getElementById('scroll-button');
+		  if (window.scrollY > 100) {
+			scrollButton.style.display = 'block';
+		  } else {
+			scrollButton.style.display = 'none';
+		  }
+		}
+	  
+		// 페이지가 로드될 때 스크롤 버튼 상태 설정
+		window.addEventListener('load', toggleScrollButton);
+	  
+		// 스크롤 이벤트 리스너 추가
+		window.addEventListener('scroll', toggleScrollButton);
+	  </script>
 </body>
 
 </html>
