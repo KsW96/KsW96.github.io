@@ -2,141 +2,148 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>김성우 포트폴리오</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>김성우 포트폴리오</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="shortcut icon" href="favicon.ico">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-<link href="https://fonts.googleapis.com/css?family=Karla:400,700"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
-	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
-<!-- Animate.css -->
-<link rel="stylesheet" href="css/animate.css">
-<!-- Icomoon Icon Fonts-->
-<link rel="stylesheet" href="css/icomoon.css">
-<!-- Bootstrap  -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<!-- Owl Carousel -->
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<!-- Magnific Popup -->
-<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 
-<!-- Modernizr JS -->
-<script src="js/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-<style>
-.left-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background: #333;
-	/* 배경색 지정 */
-	z-index: 9999;
-	overflow-y: auto;
-	/* 네비게이션 바 내용이 넘칠 경우 스크롤 생성 */
-	transition: all 0.3s ease;
-}
+	<style>
+		.left-nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background: #333;
+			/* 배경색 지정 */
+			z-index: 9999;
+			overflow-y: auto;
+			/* 네비게이션 바 내용이 넘칠 경우 스크롤 생성 */
+			transition: all 0.3s ease;
+		}
 
-/* 네비게이션 바 버튼 스타일 */
-.left-nav ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
+		/* 네비게이션 바 버튼 스타일 */
+		.left-nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
 
-.left-nav ul li {
-	margin: 0;
-	padding: 0;
-	text-align: right;
-}
+		.left-nav ul li {
+			margin: 0;
+			padding: 0;
+			text-align: right;
+		}
 
-.left-nav ul li a {
-	display: block;
-	padding: 20px 30px;
-	text-decoration: none;
-	color: #fff;
-	font-size: 18px;
-	font-weight: bold;
-	transition: 0.3s;
-}
+		.left-nav ul li a {
+			display: block;
+			padding: 20px 30px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			transition: 0.3s;
+		}
 
-/* 스크롤 시 네비게이션 바 버튼 위치 조정 */
-.left-nav.scrolled ul li a {
-	padding: 20px 30px;
-}
+		/* 스크롤 시 네비게이션 바 버튼 위치 조정 */
+		.left-nav.scrolled ul li a {
+			padding: 20px 30px;
+		}
 
-@media screen and (max-width: 768px) {
-	/* 휴대폰 화면에 적용될 스타일 */
-	.left-nav {
-		/* 네비게이션 바 스타일 수정 */
-		
-	}
-}
+		@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 768px) {
-	/* 휴대폰 화면에 적용될 스타일 */
-	.left-nav {
-		display: none;
-		/* 기본적으로 숨김 */
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100%;
-		background: #333;
-		z-index: 9999;
-		overflow-y: auto;
-		transition: all 0.3s ease;
-	}
+			/* 휴대폰 화면에 적용될 스타일 */
+			.left-nav {
+				/* 네비게이션 바 스타일 수정 */
 
-	/* 토글 버튼 스타일 */
-	.toggle-button {
-		display: block;
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		z-index: 10000;
-		cursor: pointer;
-	}
-}
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+
+			/* 휴대폰 화면에 적용될 스타일 */
+			.left-nav {
+				display: none;
+				/* 기본적으로 숨김 */
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				background: #333;
+				z-index: 9999;
+				overflow-y: auto;
+				transition: all 0.3s ease;
+			}
+
+			/* 토글 버튼 스타일 */
+			.toggle-button {
+				display: block;
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				z-index: 10000;
+				cursor: pointer;
+			}
+		}
 
 
 
-.scroll-to-top {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #333;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+		.scroll-to-top {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: #333;
+			color: #fff;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 24px;
+			cursor: pointer;
+			z-index: 1000;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
 
-.scroll-to-top:hover {
-  background-color: #555;
-  color: #fff;
-}
-</style>
+		.scroll-to-top:hover {
+			background-color: #555;
+			color: #fff;
+		}
+
+
+		.services ul li:hover {
+			font-weight: bold;
+			/* 마우스를 올렸을 때 텍스트 굵게 표시 */
+			color: rgb(221, 190, 144);
+			/* 마우스를 올렸을 때 텍스트 색상 노란색으로 변경 */
+		}
+	</style>
 
 </head>
 
@@ -158,6 +165,7 @@
 					<div class="col-md-12">
 						<ul>
 							<li class="active"><a href="#colorlib-page">Home</a></li>
+							<li><a href="#colorlib-logo">Information</a></li>
 							<li><a href="#colorlib-services">Skills</a></li>
 							<li><a href="#colorlib-work">Projects</a></li>
 							<li><a href="#colorlib-blog">Blog</a></li>
@@ -233,18 +241,17 @@
 			</div>
 		</div>
 
-		<div id="colorlib-services">
+		<div id="colorlib-logo">
 			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Information</h2>
-				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="services-flex">
+							<div class="row text-center">
+								<h2 class="bold">Information</h2>
+							</div>
 							<div class="one-third">
 								<div class="row">
-									<div
-										class="col-md-12 col-md-offset-0 animate-box intro-heading">
+									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
 										<span>Information</span>
 										<h2>Information</h2>
 									</div>
@@ -267,8 +274,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img"
-								style="background-image: url(images/skills.png);"></div>
 						</div>
 					</div>
 				</div>
@@ -286,8 +291,7 @@
 						<div class="services-flex">
 							<div class="one-third">
 								<div class="row">
-									<div
-										class="col-md-12 col-md-offset-0 animate-box intro-heading">
+									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
 										<span>My Skills</span>
 										<h2>My Skills</h2>
 									</div>
@@ -347,8 +351,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="one-forth services-img"
-								style="background-image: url(images/skills.png);"></div>
+							<div class="one-forth services-img" style="background-image: url(images/skills.png);">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -361,8 +365,7 @@
 					<h2 class="bold">Projects</h2>
 				</div>
 				<div class="row">
-					<div
-						class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
 						<h2>Done Projects</h2>
 						<h3>Clicking on the screen takes you to a git link.</h3>
@@ -406,8 +409,7 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="https://github.com/KsW96/FoodChatBot_Repo"
-								class="work-img"
+							<a href="https://github.com/KsW96/FoodChatBot_Repo" class="work-img"
 								style="background-image: url(images/chatbot.png);">
 								<div class="display-t">
 									<div class="work-name">
@@ -437,8 +439,7 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="https://github.com/KsW96/Pizza_Kiosk_Repo"
-								class="work-img"
+							<a href="https://github.com/KsW96/Pizza_Kiosk_Repo" class="work-img"
 								style="background-image: url(images/kiosk&Pos.png);">
 								<div class="display-t">
 									<div class="work-name">
@@ -496,8 +497,7 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="https://github.com/KsW96/HotelManagementSystem"
-								class="work-img"
+							<a href="https://github.com/KsW96/HotelManagementSystem" class="work-img"
 								style="background-image: url(images/hotel.jpg);">
 								<div class="display-t">
 									<div class="work-name">
@@ -531,8 +531,7 @@
 					<h2 class="bold">Blog</h2>
 				</div>
 				<div class="row">
-					<div
-						class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Blog</span>
 						<h2>My Blog</h2>
 					</div>
@@ -549,9 +548,8 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="https://github.com/KsW96" class="blog-img"> <img
-										class="img-responsive" src="images/git.png"
-										alt="html5 bootstrap by colorlib.com">
+									<a href="https://github.com/KsW96" class="blog-img"> <img class="img-responsive"
+											src="images/git.png" alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
 											<span class="read">Read more
@@ -569,9 +567,9 @@
 						<div class="item">
 							<div class="col-md-12">
 								<div class="article">
-									<a href="https://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4" class="blog-img"> <img
-										class="img-responsive" src="images/notion2.png"
-										alt="html5 bootstrap by colorlib.com">
+									<a href="https://mercurial-waterlily-2ba.notion.site/9dec2e3a195845848e3fc4a9b9dd55c2?pvs=4"
+										class="blog-img"> <img class="img-responsive" src="images/notion2.png"
+											alt="html5 bootstrap by colorlib.com">
 										<div class="overlay"></div>
 										<div class="link">
 											<span class="read">Read more
@@ -589,54 +587,53 @@
 								</div>
 							</div>
 						</div>
-						
-						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-pb-sm">
-							<div class="row">
-								<div class="col-md-10">
-									<h2>Let's Talk</h2>
-									<p>프로젝트에 대한 설명 혹은 직장과 관련 문의는 아래 정보를 통해 알려주세요!</p>
-									<p>
-										<a href="#">ghkfzha1@gmail.com</a>
-									</p>
-									<p>
-										<a href="#">010-2934-7551</a>
-									</p>
-									<p class="colorlib-social-icons">
-										<a href="#"><i class="icon-github"></i></a>
-									</p>
-								</div>
+	</div>
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-pb-sm">
+						<div class="row">
+							<div class="col-md-10">
+								<h2>Let's Talk</h2>
+								<p>프로젝트에 대한 설명 혹은 직장과 관련 문의는 아래 정보를 통해 알려주세요!</p>
+								<p>
+									<a href="#">ghkfzha1@gmail.com</a>
+								</p>
+								<p>
+									<a href="#">010-2934-7551</a>
+								</p>
+								<p class="colorlib-social-icons">
+									<a href="#"><i class="icon-github"></i></a>
+								</p>
 							</div>
 						</div>
-
 					</div>
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								&copy;
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;
-								<script>
-									document.write(new Date().getFullYear());
-								</script>
-								All rights reserved | This template is made with <i
-									class="icon-heart4" aria-hidden="true"></i> by <a
-									href="https://colorlib.com" target="_blank">Colorlib</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</p>
-						</div>
+
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							&copy;
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i class="icon-heart4"
+								aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
 	</div>
 
@@ -656,54 +653,54 @@
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script>
 		const typed = new Typed(".typed", {
-			strings : [ "Web Developer", "Backend Developer",
-					"Learning Developer", "Communicating Developer", ],
-			loop : true,
-			typeSpeed : 100,
-			backSpeed : 50,
-			backDelay : 2000,
+			strings: ["Web Developer", "Backend Developer",
+				"Learning Developer", "Communicating Developer",],
+			loop: true,
+			typeSpeed: 100,
+			backSpeed: 50,
+			backDelay: 2000,
 		});
 	</script>
 	<script>
 		const toggleButton = document.querySelector('.toggle-button');
 		const leftNav = document.querySelector('.left-nav');
 
-		toggleButton.addEventListener('click', function() {
+		toggleButton.addEventListener('click', function () {
 			leftNav.classList.toggle('active');
 		});
 	</script>
-<!-- 제대로 올라가고 있는거니!!!!! -->
+	<!-- 제대로 올라가고 있는거니!!!!! -->
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
-<div id="scroll-button" class="scroll-to-top" onclick="scrollToTop()">
-  <i class="icon-arrow-up"></i>
-</div>
+	<div id="scroll-button" class="scroll-to-top" onclick="scrollToTop()">
+		<i class="icon-arrow-up"></i>
+	</div>
 	<script>
 		// 스크롤 버튼을 누르면 페이지의 최상단으로 스크롤하는 함수
 		function scrollToTop() {
-		  window.scrollTo({
-			top: 0,
-			behavior: 'smooth' // 부드러운 스크롤 효과를 위해 'smooth' 옵션 사용
-		  });
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth' // 부드러운 스크롤 효과를 위해 'smooth' 옵션 사용
+			});
 		}
-	  
+
 		// 스크롤 위치가 일정 이상일 때 스크롤 버튼을 표시/숨김하는 함수
 		function toggleScrollButton() {
-		  const scrollButton = document.getElementById('scroll-button');
-		  if (window.scrollY > 100) {
-			scrollButton.style.display = 'block';
-		  } else {
-			scrollButton.style.display = 'none';
-		  }
+			const scrollButton = document.getElementById('scroll-button');
+			if (window.scrollY > 100) {
+				scrollButton.style.display = 'block';
+			} else {
+				scrollButton.style.display = 'none';
+			}
 		}
-	  
+
 		// 페이지가 로드될 때 스크롤 버튼 상태 설정
 		window.addEventListener('load', toggleScrollButton);
-	  
+
 		// 스크롤 이벤트 리스너 추가
 		window.addEventListener('scroll', toggleScrollButton);
-	  </script>
+	</script>
 </body>
 
 </html>
